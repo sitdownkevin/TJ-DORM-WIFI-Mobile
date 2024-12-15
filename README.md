@@ -1,50 +1,47 @@
-# Welcome to your Expo app 👋
+# TJ-DORM-WIFI-Helper React-Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+同济大学天骄公寓校园网连接助手
 
-## Get started
+理论上 `TJ-DORM-WIFI` 都可以用
 
-1. Install dependencies
+基于 React-Native 开发，所以支持安卓和 iOS
 
-   ```bash
-   npm install
-   ```
+> 我没有 iOS 设备，只打包了 `apk` 文件，iOS 设备可以自行编译
 
-2. Start the app
+# 演示
 
-   ```bash
-    npx expo start
-   ```
+![](./docs/React-Native.png)
 
-In the output, you'll find options to open the app in a
+# 使用方式
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 直接下载
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 从源码构建
 
-## Get a fresh project
+1. 安装需要的 package
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. 使用 Expo 预编译
 
-## Learn more
+```
+npx prebuild
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. 修改 `android/app/src/main/AndroidManifest.xml` 文件
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+将项目根目录下的 `AndroidManifest.xml.bak` 中的内容替换到 `android/app/src/main/AndroidManifest.xml` 中
 
-## Join the community
+> 解决打包后的应用无法访问 http 请求的问题
 
-Join our community of developers creating universal apps.
+4. 构建应用
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+对于安卓
+
+```
+npm run build
+```
+
+打包好的 `.apk` 文件会出现在项目根目录
