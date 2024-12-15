@@ -24,7 +24,7 @@
 
 ## 直接下载
 
-[点击下载 apk](https://github.com/sitdownkevin/TJ-DORM-WIFI-Mobile/raw/refs/heads/main/TJ-DORM-WIFI-Helper.apk)
+[点击下载 apk](https://github.com/sitdownkevin/TJ-DORM-WIFI-Mobile/releases/download/1.0.0/TJ-DORM-WIFI-Helper.apk)
 
 ## 从源码构建
 
