@@ -1,21 +1,23 @@
 {
   "expo": {
-    "name": "tj_dorm_wifi",
+    "name": "TJ DORM WIFI",
     "slug": "tj_dorm_wifi",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sitdownkevin.tj-dorm-wifi"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sitdownkevin.tj_dorm_wifi"
     },
     "web": {
       "bundler": "metro",
@@ -32,10 +34,27 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "useCleartextTraffic": true
+          }
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "a29bf888-0c98-4f6b-a032-90ff4fbea84e"
+      }
+    },
+    "owner": "sitdownkevin"
   }
 }
