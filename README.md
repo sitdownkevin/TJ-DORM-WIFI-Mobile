@@ -8,13 +8,23 @@
 
 > 我没有 iOS 设备，只打包了 `apk` 文件，iOS 设备可以自行编译
 
+# 功能
+
+1. 缓存账号和密码，可以一键登录
+
+2. 查询当前设备的联网状态
+
+3. 查询当前账号的登录设备信息（IP 地址、Mac 地址、联网时间等）
+
 # 演示
 
 ![](./docs/React-Native.png)
 
-# 使用方式
+# 使用
 
 ## 直接下载
+
+[点击下载 apk](https://github.com/sitdownkevin/TJ-DORM-WIFI-Mobile/raw/refs/heads/main/TJ-DORM-WIFI-Helper.apk)
 
 ## 从源码构建
 
