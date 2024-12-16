@@ -10,7 +10,7 @@
     "web": "expo start --web",
     "test": "jest --watchAll",
     "lint": "expo lint",
-    "build": "eas build --platform android --profile production --local --clear-cache",
+    "build": "eas build --platform android --profile production --local",
     "prebuild": "expo prebuild"
   },
   "jest": {
