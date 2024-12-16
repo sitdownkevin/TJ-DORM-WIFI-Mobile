@@ -17,7 +17,9 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.sitdownkevin.tj_dorm_wifi"
+      "package": "com.sitdownkevin.tj_dorm_wifi",
+      "enableProguardInReleaseBuilds": true,
+      "enableShrinkResources": true
     },
     "web": {
       "bundler": "metro",

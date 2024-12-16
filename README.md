@@ -34,19 +34,7 @@
 npm install
 ```
 
-2. 使用 Expo 预编译
-
-```
-npx prebuild
-```
-
-3. 修改 `android/app/src/main/AndroidManifest.xml` 文件
-
-将项目根目录下的 `AndroidManifest.xml.bak` 中的内容替换到 `android/app/src/main/AndroidManifest.xml` 中
-
-> 解决打包后的应用无法访问 http 请求的问题
-
-4. 构建应用
+2. 构建应用
 
 对于安卓
 
